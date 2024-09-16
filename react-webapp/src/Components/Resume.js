@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
+import MapContainer from "./maps/MapContainer";
 
 class Resume extends Component {
   getRandomColor() {
@@ -16,9 +17,8 @@ class Resume extends Component {
     const skillmessage = this.props.data.skillmessage;
     const education = this.props.data.education.map(function(education) {
       return (
-        <div key={education.school}>
-            <div id="map"></div>
-            <script src="src/map.js"></script>
+        <div key={education}>
+          <MapContainer />
         </div>
       );
     });
@@ -46,8 +46,8 @@ class Resume extends Component {
           </div>
 
           <div className="nine columns main-col">
-            <div className="row item">
-              <div className="twelve columns">{education}</div>
+            <div>
+              <div>{education}</div>
             </div>
           </div>
         </div>

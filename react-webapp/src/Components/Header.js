@@ -51,7 +51,11 @@ class Header extends Component {
 
         <div className="row banner">
           <div className="banner-text">
-            <h2 className="textitem">Coffee Maps Webapp 지도 웹 서비스 방문을 환영합니다</h2>
+            <h2 className="textitem">
+              지친 몸 가까운 카페를 찾아 커피 한잔으로 활력을 
+            <br /> 
+             재충전 해보세요 !!
+            </h2>
           </div>
         </div>
       </header>
